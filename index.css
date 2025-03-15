@@ -566,6 +566,15 @@ footer p {
     }
 
     .hero{
-        height: 400px;
+        height: 300px;
+
+        margin-bottom: 1.5rem;
+
     }
+
+    .header{
+        padding: unset;
+    }
+
+    
 }
