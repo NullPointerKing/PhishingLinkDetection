@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phishing Link Detector</title>
+    <title>Phishing Link Detector | PhishGuard</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <header class="header">
-    <div class="logo">
-        <img src="/rpg-game.png" class="logo-image" alt="PhishGuard logo">
-        <span class="logo-text">PhishGuard</span>
-        <span class="brand-subtitle">Phishing Link Detection System</span>
-    </div>
+        <a class="logo" href="/" aria-label="PhishGuard home">
+            <img src="/rpg-game.png" class="logo-image" alt="PhishGuard logo">
+            <span class="brand-copy">
+                <span class="logo-text">PhishGuard</span>
+                <span class="brand-subtitle">Phishing Link Detection System</span>
+            </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link active" href="/" aria-current="page">Home</a>
+            <a class="nav-link" href="/how-to-use.html">How to Use</a>
+            <a class="nav-link" href="/about-us.html">About Us</a>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="video-container">
-            <video class="video-background" autoplay muted loop playsinline>
-                <source src="/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1>Protect Yourself from Phishing Attacks</h1>
-            <p>Our advanced detection system helps you identify potentially dangerous links before they can harm you.</p>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="video-container" aria-hidden="true">
+                <video class="video-background" autoplay muted loop playsinline>
+                    <source src="/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Protect Yourself from Phishing Attacks</h1>
+                <p>Our advanced detection system helps you identify potentially dangerous links before they can harm you.</p>
+            </div>
+        </section>
 
-    <div class="input-container">
-        <div class="input-group">
-            
-            <input type="url" id="urlInput" placeholder="Enter any suspicious URL to check..." required>
-            <img src="/cross.png" class="input-icon" alt="URL Icon">
-            <button id="analyzeBtn">Analyze Now</button>
-        </div>
-        <div id="result" class="result hidden"></div>
-        <div id="loader" class="loader hidden"></div>
-    </div>
-
-    
-   
-
+        <section class="input-container" aria-label="Check a suspicious link">
+            <div class="input-group">
+                <label class="visually-hidden" for="urlInput">Suspicious URL to check</label>
+                <input type="url" id="urlInput" placeholder="Enter any suspicious URL to check..." required>
+                <img src="/cross.png" class="input-icon" alt="" aria-hidden="true">
+                <button id="analyzeBtn" type="button">Analyze Now</button>
+            </div>
+            <div id="result" class="result hidden" aria-live="polite"></div>
+            <div id="loader" class="loader hidden" role="status" aria-label="Analyzing link"></div>
+        </section>
+    </main>
 
     <footer>
         <p>© <span id="currentYear"></span> PhishGuard. Protecting users from phishing attacks worldwide.</p>
     </footer>
-
     <script src="/index.js"></script>
 </body>
 </html>
