@@ -203,4 +203,7 @@ The models were compared using multiple evaluation metrics rather than relying o
 ## 🔄 How the System Works
 
 The complete prediction workflow can be summarized as:
+<p align="center">
+  <img src="flow2.jpeg" alt="PhishGuard Machine Learning Pipeline" width="100%">
+</p>
 
