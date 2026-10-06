@@ -100,7 +100,7 @@ The frontend is designed to provide a clean and responsive experience across des
 The PhishGuard system follows an end-to-end machine learning workflow, from URL collection to real-time prediction.
 
 <p align="center">
-  <img src="flow.jpeg" alt="PhishGuard Machine Learning Pipeline" width="100%">
+  <img src="flow.jpeg" alt="PhishGuard Machine Learning Pipeline" width="700">
 </p>
 
 ### Pipeline Stages
@@ -204,6 +204,90 @@ The models were compared using multiple evaluation metrics rather than relying o
 
 The complete prediction workflow can be summarized as:
 <p align="center">
-  <img src="flow2.jpeg" alt="PhishGuard Machine Learning Pipeline" width="100%">
+  <img src="flow2.jpg" alt="PhishGuard Machine Learning Pipeline" width="700">
 </p>
 
+## 🌐 Web Application
+
+PhishGuard provides a web-based interface where users can enter a URL and analyze it in real time.
+The frontend communicates with the Flask backend through the prediction API.
+
+User Workflow
+<p align="center">
+  <img src="flow3.jpeg" alt="PhishGuard Machine Learning Pipeline" width="500">
+</p>
+
+## 🔌 REST API
+
+The backend provides a Flask REST API for URL prediction.
+
+### Prediction Endpoint
+
+```http
+POST /predict
+```
+
+### Example Request
+```JSON
+{
+  "url": "https://example.com"
+}
+```
+
+### Example Response
+```JSON
+{
+  "prediction": "legitimate"
+}
+```
+The API allows the trained machine learning model to be used by the web application and other compatible applications.
+
+.
+## 🧩 Browser Extension
+
+PhishGuard also includes a browser extension for URL analysis.
+The extension communicates with the PhishGuard backend and allows users to analyze URLs directly from their browser.
+This provides an additional layer of convenience when checking suspicious links.
+
+## 🗄️ Database
+
+Database integration is used to store and manage URL-related data and extracted features.
+The project uses relational database technologies for tasks such as:
+
+- URL storage
+- Feature storage
+- Dataset management
+- Data cleaning
+- Duplicate handling
+- Querying and analysis
+
+## 🛠️ Technology Stack
+Programming Language
+- Python
+
+Machine Learning
+- Scikit-learn
+- Pandas
+- Joblib
+- Random Forest
+- Gradient Boosting
+- Logistic Regression
+- Decision Tree
+  
+Backend
+- Flask
+- Flask-CORS
+- REST API
+  
+Frontend
+- HTML5
+- CSS3
+- JavaScript
+  
+Database
+- MySQL
+- PostgreSQL
+  
+Deployment
+- Netlify — Frontend
+- Render — Backend
