@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use | PhishGuard</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="/" aria-label="PhishGuard home">
+            <img src="/rpg-game.png" class="logo-image" alt="PhishGuard logo">
+            <span class="brand-copy">
+                <span class="logo-text">PhishGuard</span>
+                <span class="brand-subtitle">Phishing Link Detection System</span>
+            </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link active" href="/how-to-use.html" aria-current="page">How to Use</a>
+            <a class="nav-link" href="/about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <section class="page-heading">
+            <p class="eyebrow">A few simple steps</p>
+            <h1>How to Use PhishGuard</h1>
+            <p>Check a link before you open it. Here’s how to get started.</p>
+        </section>
+
+        <section class="steps" aria-label="Steps to check a link">
+            <article class="step-card">
+                <span class="step-number">01</span>
+                <h2>Copy the link</h2>
+                <p>Copy the full web address you want to check. Avoid opening a suspicious link just to copy it; use the link’s copy option instead.</p>
+            </article>
+            <article class="step-card">
+                <span class="step-number">02</span>
+                <h2>Paste it on Home</h2>
+                <p>Return to the PhishGuard Home page and paste the address into the URL field.</p>
+                <a href="/" class="page-action">Go to the link checker →</a>
+            </article>
+            <article class="step-card">
+                <span class="step-number">03</span>
+                <h2>Analyze and review</h2>
+                <p>Select Analyze Now and read the result. If anything seems suspicious, don’t enter passwords or personal information.</p>
+            </article>
+        </section>
+
+        <p class="page-note">A link check is one useful signal, but no automated tool can guarantee that every website is safe. When in doubt, go directly to the organization’s official website.</p>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear">2026</span> PhishGuard. Protecting users from phishing attacks worldwide.</p>
+    </footer>
+</body>
+</html>
