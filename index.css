@@ -34,15 +34,12 @@ body {
 
 /* Header Styles */
 .header {
+    min-height: 70px;
+    padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: relative;
+    z-index: 10;
 }
 
 .logo {
@@ -52,9 +49,11 @@ body {
 }
 
 .logo-image {
-    width: 35px;
-    height: 35px;
+    display: block;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
+    flex: 0 0 50px;
 }
 
 .logo-text {
