@@ -766,3 +766,24 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    margin-top: auto;
+}
