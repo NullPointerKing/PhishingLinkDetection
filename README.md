@@ -100,7 +100,7 @@ The frontend is designed to provide a clean and responsive experience across des
 The PhishGuard system follows an end-to-end machine learning workflow, from URL collection to real-time prediction.
 
 <p align="center">
-  <img src="docs/ml-pipeline.png" alt="PhishGuard Machine Learning Pipeline" width="100%">
+  <img src="flow.jpeg" alt="PhishGuard Machine Learning Pipeline" width="100%">
 </p>
 
 ### Pipeline Stages
@@ -200,27 +200,7 @@ The models were compared using multiple evaluation metrics rather than relying o
 
 ---
 
-# 🧠 Model Training Process
+## 🔄 How the System Works
 
-The training workflow consists of:
+The complete prediction workflow can be summarized as:
 
-```text
-Dataset
-   ↓
-Data Cleaning
-   ↓
-Duplicate Removal
-   ↓
-Feature Extraction
-   ↓
-Data Preprocessing
-   ↓
-Train/Test Split
-   ↓
-Model Training
-   ↓
-Hyperparameter Tuning
-   ↓
-Model Evaluation
-   ↓
-Best Model
