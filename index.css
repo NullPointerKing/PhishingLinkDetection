@@ -787,3 +787,135 @@ footer {
     width: 100%;
     margin-top: auto;
 }
+
+/* Mobile dropdown navigation */
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .header .logo {
+        min-width: 0;
+        gap: 0.55rem;
+    }
+
+    .header .logo-image {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-copy {
+        min-width: 0;
+    }
+
+    .header .logo-text {
+        font-size: 1.08rem;
+    }
+
+    .header .brand-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    .mobile-nav > .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .mobile-menu {
+        position: relative;
+    }
+
+    .mobile-menu summary {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        place-items: center;
+        border: 1px solid rgba(114, 9, 183, 0.18);
+        border-radius: 10px;
+        background: #f5f1ff;
+        color: var(--accent-color);
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .menu-arrow {
+        width: 9px;
+        height: 9px;
+        margin-top: -4px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg);
+        transition: transform 0.2s ease;
+    }
+
+    .mobile-menu[open] .menu-arrow {
+        margin-top: 4px;
+        transform: rotate(225deg);
+    }
+
+    .mobile-dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        z-index: 30;
+        display: grid;
+        min-width: 175px;
+        padding: 0.4rem;
+        border: 1px solid var(--bg-dark);
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+    }
+
+    .mobile-dropdown a {
+        padding: 0.7rem 0.8rem;
+        border-radius: 8px;
+        color: var(--text-color);
+        font-size: 0.92rem;
+        text-decoration: none;
+    }
+
+    .mobile-dropdown a:hover,
+    .mobile-dropdown a:focus-visible {
+        background: #f5f1ff;
+        color: var(--accent-color);
+    }
+
+    .hero {
+        height: 360px;
+    }
+
+    .hero-content {
+        padding: 0 1.25rem;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2rem, 8vw, 2.6rem);
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
