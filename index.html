@@ -15,11 +15,27 @@
                 <span class="brand-subtitle">Phishing Link Detection System</span>
             </span>
         </a>
-        <nav class="site-nav" aria-label="Main navigation">
-            <a class="nav-link active" href="/" aria-current="page">Home</a>
-            <a class="nav-link" href="/how-to-use.html">How to Use</a>
-            <a class="nav-link" href="/about-us.html">About Us</a>
-        </nav>
+        <!-- Visible on desktop -->
+    <nav class="site-nav desktop-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="how-to-use.html">How to Use</a>
+        <a class="nav-link" href="about-us.html">About Us</a>
+    </nav>
+
+<!-- Visible on mobile -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a class="nav-link" href="index.html">Home</a>
+
+        <details class="mobile-menu">
+            <summary aria-label="Open more pages menu">
+                <span class="menu-arrow" aria-hidden="true"></span>
+            </summary>
+            <div class="mobile-dropdown">
+                <a href="how-to-use.html">How to Use</a>
+                <a href="about-us.html">About Us</a>
+            </div>
+        </details>
+    </nav>
     </header>
 
     <main>
