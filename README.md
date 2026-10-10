@@ -291,3 +291,33 @@ Database
 Deployment
 - Netlify — Frontend
 - Render — Backend
+
+## 🚀 Running the Project Locally
+
+1. Clone the Repository
+
+```bash
+git clone <YOUR-REPOSITORY-URL>
+cd PhishGuard
+```
+
+2. Create a Virtual Environment(For Windows)
+
+```Windows
+python -m venv venv
+venv\Scripts\activate
+```
+3. Create a Virtual Environment(For macOS/Linux)
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+4. Install Dependencies
+```
+pip install -r requirements.txt
+```
+4. Start the Flask Backend
+```
+python app.py
+```
+The Flask API will start on the configured local port.
