@@ -297,7 +297,7 @@ Deployment
 1. Clone the Repository
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
+git clone https://github.com/NullPointerKing/PhishingLinkDetection-Frontend-.git
 cd PhishGuard
 ```
 
